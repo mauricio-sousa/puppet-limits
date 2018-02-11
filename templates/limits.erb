@@ -1,0 +1,9 @@
+#
+# This file is managed by Puppet. DO NOT EDIT.
+#
+
+<% @limit_type.each do |item, types| -%>
+<% types.each do |type, value| -%>
+<%= @user %>    <%= type %>    <%= item %>    <%= value %>
+<% end %>
+<% end %>
