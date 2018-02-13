@@ -1,5 +1,5 @@
 {
-  "name": "puppet-limits",
+  "name": "mauriciosousa-limits",
   "version": "0.1.0",
   "author": "Mauricio Sousa",
   "summary": "A module for manage files in /etc/security/limits.d",
