@@ -1,13 +1,21 @@
----
 language: ruby
 script:
   - bundle exec rake spec validate lint
 rvm:
-  - 2.3.1  
+  - 2.3.1
 env:
-  - PUPPET_GEM_VERSION="∼> 2.7.0"
-  - PUPPET_GEM_VERSION="∼> 3.0.0"
-  - PUPPET_GEM_VERSION="∼> 3.1.0"
-  - PUPPET_GEM_VERSION="∼> 3.2.0"
+  matrix:
+    - 'PUPPET_GEM_VERSION="∼> 2.7.0"'
+    - 'PUPPET_GEM_VERSION="∼> 3.0.0"'
+    - 'PUPPET_GEM_VERSION="∼> 3.1.0"'
+    - 'PUPPET_GEM_VERSION="∼> 3.2.0"'
+deploy:
+  provider: puppetforge
+  user: mauriciosousa
+  password:
+    secure: Yr0MoU5WjRdCiwEbVQSLOR6k/ZJk2TEV592lSkgL+m0kf6IVSnb1vOB69z/a5Fgqk7Z0yJbJMjdmNQekt5juH9Us3FvUr0ZHidv2d0fNGGkg32wyUAs0+qFqcQcXA86KYnSKlB3pG8KjfSkfU8eM5HuA0jkDh81jtswEP3lwV0KPN5DTReGjudKhAh9Vt6rZedJlRc0iPsQhyHhPODwr6gew94wAXhx92tMDmYOGGS+7qIh0x7wPT+2k9utkGVY0AEduivjZ9YF+txCMSq1jwhYY9BnV4i3+3udT9VtCNEBOt7AQVUX7+eatiej9Sv2akwsJPl6VP0TN1a2F1PM/26JSm8SgmjOlXIe0CSZIw02Msvmp13xILlLXZIqsxlzo3KFNSR5uwuxGiUq0Nayn3k9SZ4xbMDY7Iy3785S3AO8NWVAQ/vYANCT47e3YL33uBYeq4eJfhgjkjAnD7pClXT6UgZKtILcGWGJv8exAZS1w5vH2bcbZjRgeoJbOBbxUw4pqYPrCSDQIcgjkAvjKHxmnkedRjYbKSrf3o8drLHnQDWlfyItpvZsKmbi+RaGj/IXZBwbz+41+WdOF9scrr+xo8ivUy9nDj+nrHKFLQETJb5amGG2YElvuiOmtFXa3GBiuXgNXFlpbvCSg1/8pyeWO5d2WetC/ifZqJNqTDTo=
+  on:
+    tags: true
+    all_branches: true
 notifications:
   email: false
