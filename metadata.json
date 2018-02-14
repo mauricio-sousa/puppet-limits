@@ -1,22 +1,46 @@
 {
-   "name":"mauriciosousa-limits",
-   "version":"0.1.6",
-   "author":"Mauricio Sousa",
-   "summary":"A module for manage files in /etc/security/limits.d",
-   "license":"GPL-3.0",
-   "source":"https://github.com/mauricio-sousa/puppet-limits",
-   "project_page":"https://github.com/mauricio-sousa/puppet-limits",
-   "issues_url":"https://github.com/mauricio-sousa/puppet-limits/issues",
-   "tags":[
+    "name": "mauriciosousa-limits",
+    "version": "0.1.7",
+    "author": "Mauricio Sousa",
+    "summary": "A module for manage files in /etc/security/limits.d",
+    "license": "GPL-3.0",
+    "source": "https://github.com/mauricio-sousa/puppet-limits",
+    "project_page": "https://github.com/mauricio-sousa/puppet-limits",
+    "issues_url": "https://github.com/mauricio-sousa/puppet-limits/issues",
+    "tags": [
       "limits"
-   ],
-   "dependencies":[
-
-   ],
-   "requirements":[
+    ],
+    "dependencies": [],
+    "requirements": [
       {
-         "name":"puppet",
-         "version_requirement":"> 2.7.0"
+        "name": "puppet",
+        "version_requirement": ">= 2.7.0 < 6.0.0"
       }
-   ]
-}
+    ],
+    "operatingsystem_support": [
+      {
+        "operatingsystem": "CentOS",
+        "operatingsystemrelease": [
+          "5",
+          "6",
+          "7"
+        ]
+      },
+      {
+        "operatingsystem": "Debian",
+        "operatingsystemrelease": [
+          "7",
+          "8"
+        ]
+      },
+      {
+        "operatingsystem": "Ubuntu",
+        "operatingsystemrelease": [
+          "10.04",
+          "12.04",
+          "14.04",
+          "16.04"
+        ]
+      }
+    ]
+  }

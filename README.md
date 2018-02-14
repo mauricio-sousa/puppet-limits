@@ -50,15 +50,15 @@ limits::limit { 'username_nofile':
   ensure     => present,
   user       => 'username',
   limit_type => {
-    nofile  => {
+    nofile => {
       soft => 16384,
       hard => 32768,
     },
-    nproc => {
+    nproc  => {
       soft => 16384,
       hard => 32768,
     },
-    'core' => {
+    core   => {
       soft => 16384,
       hard => 32768,
     }
