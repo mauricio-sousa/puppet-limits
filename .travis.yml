@@ -4,7 +4,7 @@ script:
   - 'rake spec validate lint'
 matrix:
   include:
-  - rvm: 2.1.5
+  - rvm: 2.0.0
     env: PUPPET_VERSION="2.7"
   - rvm: 2.1.5
     env: PUPPET_VERSION="3.0"
