@@ -1,6 +1,6 @@
 {
   "name": "mauriciosousa-limits",
-  "version": "0.1.0",
+  "version": "0.1.5",
   "author": "Mauricio Sousa",
   "summary": "A module for manage files in /etc/security/limits.d",
   "license": "GPL-3.0",
