@@ -1,13 +1,22 @@
 {
-  "name": "mauriciosousa-limits",
-  "version": "0.1.6",
-  "author": "Mauricio Sousa",
-  "summary": "A module for manage files in /etc/security/limits.d",
-  "license": "GPL-3.0",
-  "source": "https://github.com/mauricio-sousa/puppet-limits",
-  "project_page": "https://github.com/mauricio-sousa/puppet-limits",
-  "issues_url": "https://github.com/mauricio-sousa/puppet-limits/issues",
-  "tags": ["limits"],
-  "dependencies": []
-}
+   "name":"mauriciosousa-limits",
+   "version":"0.1.6",
+   "author":"Mauricio Sousa",
+   "summary":"A module for manage files in /etc/security/limits.d",
+   "license":"GPL-3.0",
+   "source":"https://github.com/mauricio-sousa/puppet-limits",
+   "project_page":"https://github.com/mauricio-sousa/puppet-limits",
+   "issues_url":"https://github.com/mauricio-sousa/puppet-limits/issues",
+   "tags":[
+      "limits"
+   ],
+   "dependencies":[
 
+   ],
+   "requirements":[
+      {
+         "name":"puppet",
+         "version_requirement":"> 2.7.0"
+      }
+   ]
+}
