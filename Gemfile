@@ -8,7 +8,7 @@ gem 'puppet', puppetversion
 gem 'puppetlabs_spec_helper'
 
 if RUBY_VERSION < '2.0.0'
-  gem "json", '>= 2.3.0'
+  gem 'json', '>= 2.3.0'
   gem 'rake', '< 12.3.0'
   gem 'json_pure', '< 2'
   gem 'metadata-json-lint', '< 1.2.0'
