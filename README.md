@@ -1,5 +1,4 @@
-# puppet-limits
-[![Build Status](https://travis-ci.org/mauricio-sousa/puppet-limits.svg?branch=master)](https://travis-ci.org/mauricio-sousa/puppet-limits)
+[![Ruby CI](https://github.com/mauricio-sousa/puppet-limits/actions/workflows/ruby.yml/badge.svg)](https://github.com/mauricio-sousa/puppet-limits/actions/workflows/ruby.yml)
 
 Manage user and group limits via Puppet
 
